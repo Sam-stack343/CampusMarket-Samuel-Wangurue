@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings — Campus Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== TOP NAVIGATION ===== -->
+  <nav class="top-nav">
+    <div class="top-nav-inner">
+      <a href="catalogue.html" class="nav-logo">
+        <div class="logo-icon">C</div>
+        <span class="logo-text">Campus Mkt</span>
+      </a>
+      <div class="nav-search">
+        <input type="text" placeholder="Search for products, brands and more...">
+        <button>&#128269;</button>
+      </div>
+      <div class="nav-actions">
+        <a href="settings.html">
+          <span class="icon">&#128100;</span>
+          <span>Account</span>
+        </a>
+        <a href="checkout.html">
+          <span class="icon">&#128722;</span>
+          <span>Cart</span>
+          <span class="badge">3</span>
+        </a>
+        <a href="logout.html">
+          <span class="icon">&#128682;</span>
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== CATEGORY NAVIGATION ===== -->
+  <div class="cat-nav">
+    <div class="cat-nav-inner">
+      <a href="catalogue.html">All</a>
+      <a href="#">Electronics</a>
+      <a href="#">Books</a>
+      <a href="#">Fashion</a>
+      <a href="#">Home & Living</a>
+      <a href="#">Sports</a>
+      <a href="#">Stationery</a>
+      <a href="#">Groceries</a>
+      <a href="#">Health</a>
+      <a href="#">Accessories</a>
+    </div>
+  </div>
+
+  <!-- ===== SETTINGS LAYOUT ===== -->
+  <div class="settings-layout">
+    <div class="settings-card">
+      <div class="settings-tabs">
+        <button class="active">Profile</button>
+        <button>Address</button>
+        <button>Password</button>
+        <button>Notifications</button>
+        <button>Privacy</button>
+      </div>
+      <div class="settings-body">
+
+        <!-- Profile Section -->
+        <div class="profile-header">
+          <div class="profile-avatar">JD</div>
+          <div class="profile-details">
+            <h3>John Doe</h3>
+            <p>Student • Nairobi Campus</p>
+            <p>john.doe@campus.edu</p>
+          </div>
+        </div>
+
+        <h3>Personal Information</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" value="John">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" value="Doe">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="set-email">Email</label>
+          <input type="email" id="set-email" value="john.doe@campus.edu">
+        </div>
+        <div class="form-group">
+          <label for="set-phone">Phone Number</label>
+          <input type="tel" id="set-phone" value="+254 712 345 678">
+        </div>
+        <div class="form-group">
+          <label for="set-dob">Date of Birth</label>
+          <input type="date" id="set-dob" value="1999-03-15">
+        </div>
+
+        <button class="btn-save">Save Changes</button>
+
+        <hr style="border:none; border-top:1px solid #eee; margin:28px 0;">
+
+        <!-- Notifications Section -->
+        <h3>Notifications</h3>
+
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <h4>Order Updates</h4>
+            <p>Receive notifications about your orders</p>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <h4>Promotional Offers</h4>
+            <p>Get notified about sales and discounts</p>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <h4>Price Drop Alerts</h4>
+            <p>Alert me when tracked items go on sale</p>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <h4>New Arrivals</h4>
+            <p>Browse latest products added to marketplace</p>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <button class="btn-save">Save Preferences</button>
+
+        <hr style="border:none; border-top:1px solid #eee; margin:28px 0;">
+
+        <!-- Security Section -->
+        <h3>Security</h3>
+        <div class="form-group">
+          <label for="current-pass">Current Password</label>
+          <input type="password" id="current-pass" placeholder="Enter current password">
+        </div>
+        <div class="form-group">
+          <label for="new-pass">New Password</label>
+          <input type="password" id="new-pass" placeholder="Enter new password">
+        </div>
+        <div class="form-group">
+          <label for="confirm-pass">Confirm New Password</label>
+          <input type="password" id="confirm-pass" placeholder="Confirm new password">
+        </div>
+
+        <button class="btn-save">Update Password</button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+   <!--
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Discounts</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="settings.html">My Account</a></li>
+          <li><a href="checkout.html">Orders</a></li>
+          <li><a href="settings.html">Addresses</a></li>
+          <li><a href="logout.html">Log Out</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Campus Marketplace. All rights reserved.
+    </div>
+  </footer>
+-->
+</body>
+</html>
