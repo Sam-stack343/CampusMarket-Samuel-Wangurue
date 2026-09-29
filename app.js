@@ -10,8 +10,8 @@
       category: 'Electronics',
       price: 1299,
       oldPrice: 2500,
-      image: 'Amazon_com_ MOVSSOU E7 Active Noise Cancelling….jpg',
-      icon: '🎧'
+      image: 'images/84161086784507225.jpg',
+      
     },
     {
       id: 2,
@@ -19,24 +19,24 @@
       category: 'Books',
       price: 450,
       oldPrice: 650,
-      icon: '📓'
+      image:'images/A5 Notebooks Free branding WhatsApp 0740282041 or….jpg'
     },
     {
       id: 3,
-      name: 'Classic Running Sneakers - Size 6-12',
+      name: 'wireless earpiece',
       category: 'Sports',
       price: 1899,
       oldPrice: 2800,
-      image: '84161086784507225.png',
-      icon: '👟'
+      image: 'images/84161086784507225.png',
+     
     },
     {
       id: 4,
-      name: 'Smart Fitness Tracker Watch',
-      category: 'Electronics',
+      name: 'NoteBooks',
+      category: 'Books',
       price: 2499,
       oldPrice: 3999,
-      icon: '⌚'
+      image:'images/Black Books.jpg'
     },
     {
       id: 5,
@@ -44,15 +44,15 @@
       category: 'Electronics',
       price: 899,
       oldPrice: 1500,
-      icon: '🔊'
+      image:'images/84161086784507225.jpg'
     },
     {
       id: 6,
-      name: 'Backpack Laptop Bag 15.6 inch',
-      category: 'Accessories',
+      name: 'Mens Wide Leg Dress Pants',
+      category: 'clothes',
       price: 1199,
       oldPrice: 1800,
-      icon: '🎒'
+      images:'images/Mens Wide Leg Dress Pants in 10 Colors Pleated Slacks - Brown _ Dress Size Pants _ 28.jpg'
     },
     {
       id: 7,
@@ -76,7 +76,7 @@
       category: 'Fashion',
       price: 1299,
       oldPrice: 1800,
-      image: "15 Best Men's Scarves to Stay Stylish and Warm in___.jpg",
+      image: "images/15 Best Men's Scarves to Stay Stylish and Warm in___.jpg",
       icon: '🧣'
     },
     {
@@ -89,19 +89,19 @@
     },
     {
       id: 11,
-      name: 'Campus First Aid Kit',
-      category: 'Health',
+      name: 'Data structure course',
+      category: 'courses',
       price: 750,
       oldPrice: 950,
-      icon: '🩹'
+      image:'images/Learn Data structure and algorithms & system design.jpg'
     },
     {
       id: 12,
-      name: 'USB-C Charging Cable',
-      category: 'Accessories',
+      name: 'laptop',
+      category: 'electronics',
       price: 499,
       oldPrice: 700,
-      icon: '🔌'
+      image:'images/62135669854165478.jpg'
     }
   ];
 
@@ -208,8 +208,8 @@
 
   function productCard(product) {
     return `
-      <article class="product-card" data-product-id="${product.id}">
-        ${imageMarkup(product)}
+      <article class="product-card"       data-product-id="${product.id}">
+      ,  ${imageMarkup(product)}
 
         <div class="product-info">
           <span class="product-category">${product.category}</span>
@@ -218,11 +218,6 @@
 
           <div class="product-price">
             <span class="current-price">${money(product.price)}</span>
-            ${
-              product.oldPrice
-                ? `<span class="old-price">${money(product.oldPrice)}</span>`
-                : ''
-            }
           </div>
 
           <div class="product-actions">

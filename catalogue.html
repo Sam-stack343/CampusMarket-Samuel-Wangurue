@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue — Campus Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== TOP NAVIGATION ===== -->
+  <nav class="top-nav">
+    <div class="top-nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">C</div>
+        <span class="logo-text">Campus Mkt</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="catalogue.html" class="nav-link">Browse</a>
+      </div>
+      <div class="nav-search">
+        <input
+        type="search"
+        placeholder="Search products..."
+        aria-label="Search products"
+    >
+        <button>&#128269;</button>
+      </div>
+      <div class="nav-actions">
+        <a href="settings.html" class="nav-action">
+          <span>Account</span>
+        </a>
+        <a href="checkout.html" class="nav-action">
+          <span>Cart</span>
+          <span class="cart-badge">3</span>
+        </a>
+        <a href="logout.html" class="nav-action">
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== CATEGORY NAVIGATION ===== -->
+  <div class="cat-nav">
+    <div class="cat-nav-inner">
+      <a href="#" data-category="All">All</a>
+      <a href="#" data-category="Electronics">Electronics</a>
+      <a href="#" data-category="Books">Books</a>
+      <a href="#" data-category="Sports">Sports</a>
+      <a href="#" data-category="Accessories">Accessories</a>
+      <a href="#" data-category="Home & Living">Home & Living</a>
+      <a href="#" data-category="Groceries">Groceries</a>
+      <a href="#" data-category="Fashion">Fashion</a>
+      <a href="#" data-category="Stationery">Stationery</a>
+      <a href="#" data-category="Health">Health</a>
+    </div>
+  </div>
+
+  <!-- ===== TRENDING PRODUCTS ===== -->
+  <section class="products-section" id="products">
+    <div class="section-header">
+      <h2>Trending Products</h2>
+      <a href="#products">See More </a>
+    </div>
+    <div class="product-grid" aria-live="polite">
+
+    </div>
+  </section>
+
+<script src="app.js"></script>
+</body>
+</html>
